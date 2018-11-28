@@ -3,8 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { TabsPage } from './tabs.page';
 import { HomePage } from '../home/home.page';
-import { AboutPage } from '../about/about.page';
-import { ContactPage } from '../contact/contact.page';
+import { SocialPage } from '../pages/social/social.page';
+import { ShopPage } from '../pages/shop/shop.page';
+import { PokerPage } from '../pages/poker/poker.page';
+import { CareerPage } from '../pages/career/career.page';
+import { ProfilePage } from '../pages/profile/profile.page';
 
 const routes: Routes = [
   {
@@ -13,29 +16,40 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: '/tabs/(home:home)',
+        redirectTo: '/tabs/(shop:shop)',
         pathMatch: 'full',
       },
       {
-        path: 'home',
-        outlet: 'home',
-        component: HomePage
+        path: 'shop',
+        outlet: 'shop',
+        component: ShopPage
       },
       {
-        path: 'about',
-        outlet: 'about',
-        component: AboutPage
+        path: 'social',
+        outlet: 'social',
+        component: SocialPage
       },
       {
-        path: 'contact',
-        outlet: 'contact',
-        component: ContactPage
-      }
+        path: 'poker',
+        outlet: 'poker',
+        component: PokerPage
+      },      
+      {
+        path: 'career',
+        outlet: 'career',
+        component: CareerPage
+      },
+      {
+        path: 'profile',
+        outlet: 'profile',
+        component: ProfilePage
+      },
+     
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/(home:home)',
+    redirectTo: '/tabs/(shop:shop)',
     pathMatch: 'full'
   }
 ];

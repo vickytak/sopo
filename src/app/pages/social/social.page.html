@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>MY FRIENDS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="frlist-container">
+      <div class="fr-box myShadow" *ngFor="let fr of friendList">
+        <img [src]="fr.userPic" class="user-pic" />
+        <span class="user-name">{{fr.userName}}</span>
+      </div>
+    </div>
+  
+  </ion-content>

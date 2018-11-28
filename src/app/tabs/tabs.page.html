@@ -1,32 +1,76 @@
 <ion-tabs>
 
-  <ion-tab tab="home">
-    <ion-router-outlet name="home"></ion-router-outlet>
+  <ion-tab tab="shop">
+    <ion-router-outlet name="shop"></ion-router-outlet>
   </ion-tab>
-  <ion-tab tab="about">
-    <ion-router-outlet name="about"></ion-router-outlet>
+  <ion-tab tab="social">
+    <ion-router-outlet name="social"></ion-router-outlet>
   </ion-tab>
-  <ion-tab tab="contact">
-    <ion-router-outlet name="contact"></ion-router-outlet>
+  <ion-tab tab="poker">
+    <ion-router-outlet name="poker"></ion-router-outlet>
   </ion-tab>
+
+  <ion-tab tab="career">
+    <ion-router-outlet name="career"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab tab="profile">
+    <ion-router-outlet name="profile"></ion-router-outlet>
+  </ion-tab>
+
 
   <ion-tab-bar slot="bottom">
-
-    <ion-tab-button tab="home" href="/tabs/(home:home)">
-      <ion-icon name="home"></ion-icon>
-      <ion-label>Home</ion-label>
+<div class="animatedline"></div>
+    <ion-tab-button tab="shop" href="/tabs/(shop:shop)">
+      <ion-icon name="cart"></ion-icon>
+      <ion-label>Shop</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="about" href="/tabs/(about:about)">
-      <ion-icon name="information-circle"></ion-icon>
-      <ion-label>About</ion-label>
+    <ion-tab-button tab="social" href="/tabs/(social:social)">
+      <ion-icon name="people"></ion-icon>
+      <ion-label>social</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="contact" href="/tabs/(contact:contact)">
-      <ion-icon name="contacts"></ion-icon>
-      <ion-label>Contact</ion-label>
+    <ion-tab-button tab="poker" href="/tabs/(poker:poker)">
+      <ion-icon name="heart"></ion-icon>
+      <ion-label>Poker</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="career" href="/tabs/(career:career)">
+      <ion-icon name="briefcase"></ion-icon>
+      <ion-label>Career</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profile" href="/tabs/(profile:profile)">
+      <ion-icon name="contact"></ion-icon>
+      <ion-label>Profile</ion-label>
     </ion-tab-button>
 
   </ion-tab-bar>
 
 </ion-tabs>
+
+<!-- <ion-toolbar color="success" class="toolbar-tab">
+  <div class="tabs">
+      <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+          <ion-icon name="cart"></ion-icon>
+          <div class="label">shop</div>
+      </div>
+      <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+        <ion-icon name="people"></ion-icon>
+        <div class="label">social</div>
+      </div>
+      <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+          <ion-icon name="heart"></ion-icon>
+          <div class="label">Career</div>
+      </div>
+      <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+        <ion-icon name="briefcase"></ion-icon>
+        <div class="label">Career</div>
+      </div>
+      <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+        <ion-icon name="contact"></ion-icon>
+        <div class="label">Profile</div>
+      </div>
+  </div>
+</ion-toolbar> -->

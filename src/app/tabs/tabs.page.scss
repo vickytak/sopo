@@ -1,1 +1,22 @@
 
+// .animatedline{
+//     border-top:1px solid black;
+// }
+
+.animatedline {
+    background: repeating-linear-gradient(to right, orange 0%, white 50%, orange 100%);
+    width: 100%;
+    background-size: 200% auto;
+    background-position: 0 100%;
+    animation: gradient 2s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    height: 2px;
+    position: absolute;
+    top: 0;
+  }
+  
+  @keyframes gradient { 
+    0%   { background-position: 0 0; }
+    100% { background-position: -200% 0; }
+  }

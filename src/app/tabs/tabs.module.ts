@@ -7,19 +7,24 @@ import { FormsModule } from '@angular/forms';
 import { TabsPageRoutingModule } from './tabs.router.module';
 
 import { TabsPage } from './tabs.page';
-import { ContactPageModule } from '../contact/contact.module';
-import { AboutPageModule } from '../about/about.module';
-import { HomePageModule } from '../home/home.module';
+import { SocialPageModule } from '../pages/social/social.module';
+import { PokerPageModule } from '../pages/poker/poker.module';
+import { CareerPageModule } from '../pages/career/career.module';
+import { ShopPageModule } from '../pages/shop/shop.module';
+import { ProfilePageModule } from '../pages/profile/profile.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    TabsPageRoutingModule,
-    HomePageModule,
-    AboutPageModule,
-    ContactPageModule
+    TabsPageRoutingModule,    
+    ShopPageModule,
+    SocialPageModule,
+    PokerPageModule,
+    CareerPageModule,
+    ProfilePageModule
+
   ],
   declarations: [TabsPage]
 })
